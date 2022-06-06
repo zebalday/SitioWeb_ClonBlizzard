@@ -1,0 +1,548 @@
+/*------------------------------------------------*/
+/*     ESTILO DE FONDO Y BARRA DE NAVEGACIÓN     */
+/*------------------------------------------------*/
+
+body{
+    margin: 0;
+    background-image: url("Imagenes/background1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    height: 80px;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+ul.topnav li.right {
+    float: right;
+    padding: 20px 10px;
+}
+
+
+.blizzardimg{
+    width: 100px;
+    height: 70px;
+    align-items: center;
+}
+
+header{
+    font-family: Sans-serif;
+    text-align: left;
+    color: rgb(201, 199, 199);
+    height: 30px;
+    padding: 0px 5%;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-family: Sans-serif;
+    color: rgb(201, 199, 199);
+    background-color: black;
+    height: 50px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+/*------------------------------------------------*/
+/*          ESTILOS DE LA PÁGINA PRINCIPAL        */
+/*------------------------------------------------*/
+
+
+h2.blizzard {
+    font-family: Sans-serif;
+    text-align: left;
+    color: rgb(201, 199, 199);
+    height: 30px;
+    padding: 0px 5%;
+    opacity: 50%;
+}
+
+div .tabla{text-align: center;}
+
+table{
+    margin: 0 auto;
+    width: 90%;
+    height: 70%;
+}
+
+table img{
+    border: 1px solid grey;
+    width: 260px;
+    height: 330px;
+}
+
+/* container , box y box:hover para la interacción de las imagenes (index)*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 1s;
+
+}
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/*------------------------------------------------*/
+/*   ESTILOS DE LA PÁGINA DETALLE STARCRAFT II    */
+/*------------------------------------------------*/
+
+.bodySc2{
+    margin: 0;
+    background-image: url("Imagenes/backgroundsc2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+
+.grupoInfocard{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    padding-top: 10px;
+    max-width: none;
+    width: auto;
+
+}
+
+
+.grupoInfocard .infocard{
+    background-color: #000d1a;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 60%), 0 8px 32px rgb(0 0 0 / 40%);
+    margin-top: 2px;
+    margin-bottom: 20px;
+    max-width: 300px;
+    padding: 2px;
+    position: relative;
+}
+
+
+.infocard{
+    flex: 1 1 50%;
+    width: auto;
+    height: 420px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: center;
+    border: 1px solid #20456883;
+}
+
+
+.imgDetail img{
+    width: 60px;
+    height: 180px;
+    display: block;
+    font-size: 0;
+    margin: -2px;
+    position: relative;
+    width: calc(100% + 4px);
+}
+
+.infocard_block_title {
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: white;
+}
+
+.infocard_block_desc{
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: #a3b8cc;
+    vertical-align: baseline;
+    line-height: 27px;
+}
+
+.video{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    max-width: none;
+    width: 700px;
+    height: 500px;
+    justify-content: center;
+}
+
+.trailer{
+    box-shadow: 10px 10px 10px 10px rgb(0 0 0 / 60%), 0 8px 32px rgb(0 0 0 / 40%);
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+}
+
+
+/*------------------------------------------------*/
+/*        ESTILOS DE LA PÁGINA REGISTRO           */
+/*------------------------------------------------*/
+
+
+.tablaRegistro{
+    box-shadow: 0 2px 8px rgb(0 0 0 / 60%), 0 8px 32px rgb(0 0 0 / 40%);
+    background-image: url("Imagenes/fondo-formulario.jpg");
+    opacity: 65%;
+    border-top: 650px;
+    border-bottom: 450px;
+    margin: 0 auto;
+    width:450px;
+    height:auto;
+    padding: 0px 1%;
+    border-radius: 2%;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.tablaRegistro input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    height: 20px;
+}
+
+.tablaRegistro select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    height: 23px; 
+}
+
+.tablaRegistro button{
+    height: 40%;
+}
+
+
+.pBlanca{
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: white;
+    opacity: 100%;
+}
+
+.pGris{
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    color: grey;
+    opacity: 100%;
+    font-style: oblique;
+}
+
+.comboPais{
+    align-items: center;
+    background-color:rgb(2, 14, 29);
+    color: white;
+    width: 100%;
+}
+
+.nombreApellidoContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    max-width: none;
+    width: auto;
+    align-items: baseline;
+}
+
+.textboxNomAp{
+    text-align: justify;
+    color: white;
+    border-color: lightgray;
+    background-color:rgb(2, 14, 29);
+    opacity: 100%;
+    width: 48%;
+}
+
+.nacimientoContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    max-width: none;
+    width: auto;
+    align-items: baseline;
+}
+
+.textboxNacimiento,.comboMes{
+    text-align: justify;
+    color: white;
+    border-color: lightgray;
+    background-color:rgb(2, 14, 29);
+    opacity: 100%;
+    width: 31.5%;
+}
+
+.textboxCorreo{
+    text-align: justify;
+    color: white;
+    border-color: lightgray;
+    background-color:rgb(2, 14, 29);
+    opacity: 100%;
+    width: 100%;
+}
+
+.textboxPwd{
+    text-align: justify;
+    color: white;
+    border-color: lightgray;
+    background-color:rgb(2, 14, 29);
+    opacity: 100%;
+    width: 100%;
+}
+
+.comboPregunta{
+    align-items: center;
+    background-color:rgb(2, 14, 29);
+    color: white;
+    width: 100%;
+}
+
+.textboxRespuesta{
+    text-align: justify;
+    color: white;
+    border-color: lightgray;
+    background-color:rgb(2, 14, 29);
+    opacity: 100%;
+    width: 100%; 
+}
+
+.botonRegistro{
+    color: white;
+    border-color: cyan;
+    background-color:rgb(11, 164, 234);
+    opacity: 100%;
+    width: 100%;
+    font-size: medium;
+}
+
+.botonYatengo{
+    color: white;
+    border-color: lightskyblue;
+    background-color:rgb(2, 14, 29);
+    opacity: 100%;
+    width: 100%;
+    height: 100px;
+    font-size: medium;
+    height: fit-content;
+
+
+}
+
+
+/*------------------------------------------------*/
+/*   ESTILOS DE LA PÁGINA INICIO DE SESIÓN        */
+/*------------------------------------------------*/
+
+
+.login{
+    box-shadow: 0 2px 8px rgb(0 0 0 / 60%), 0 8px 32px rgb(0 0 0 / 40%);
+    background-image: url("Imagenes/fondo-formulario.jpg");
+    opacity: 69%;
+    margin: 0 auto;
+    width:300px;
+    padding: 0px 1%;
+    border-radius: 2%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.blizzardImgLogin{
+    width: 200px;
+    height: 100px;
+    margin: auto 0;
+    margin-left: 52px;
+}
+
+.textboxCorreoLogin{
+    text-align: justify;
+    color: white;
+    border-color: lightgray;
+    background-color:rgb(2, 14, 29);
+    opacity: 100%;
+    width: 97%;
+    padding: 1%;
+}
+
+.textboxPwdLogin{
+    text-align: justify;
+    color: white;
+    border-color: lightgray;
+    background-color:rgb(2, 14, 29);
+    opacity: 100%;
+    width: 97%;
+    padding: 1%;
+}
+
+
+.botonLogin{
+    color: white;
+    border-color: rgb(33, 157, 211);
+    background-color:rgb(19, 134, 192);
+    opacity: 100%;
+    width: 100%;
+    padding: 1%;
+    margin: 0 auto;
+    margin-left: 0px;
+    height: 32px;
+}
+
+.crearCuenta{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(11, 164, 234);
+    text-decoration: none;
+    opacity: 100%;
+    width: 100%;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.footerLogin{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    font-family: Sans-serif;
+    text-align: center;
+    background-color: black;
+    color: rgb(201, 199, 199);
+    height: 50px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+
+/*------------------------------------------------*/
+/*        ESTILOS DE LA PÁGINA USUARIO            */
+/*------------------------------------------------*/
+
+.tablaPerfil{
+    box-shadow: 0 2px 8px rgb(0 0 0 / 60%), 0 8px 32px rgb(0 0 0 / 40%);
+    background-image: url("Imagenes/fondo-formulario.jpg") fixed;
+    opacity: 65%;
+    border-top: 650px;
+    border-bottom: 450px;
+    margin: 0 auto;
+    width:450px;
+    height:auto;
+    padding: 0px 1%;
+    border-radius: 2%;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.tablaPerfil input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    height: 20px;
+    width: 100%;
+}
+
+.tablaPerfil select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    height: 23px; 
+    width: 100%;
+}
+
+.tablaPerfil button{
+    height: 40%;
+}
+
+.botonModificarCuenta{
+    color: white;
+    border-color: rgb(255, 255, 255);
+    background-color:rgb(29, 148, 65);
+    opacity: 100%;
+    width: 100%;
+    font-size: medium;
+}
+
+.botonEliminarCuenta{
+    color: white;
+    border-color: rgb(255, 255, 255);
+    background-color:rgb(136, 21, 21);
+    opacity: 100%;
+    width: 100%;
+    height: 100px;
+    font-size: medium;
+    height: fit-content;
+
+}
+
+.botonesPerfilContainer {
+    padding-top: 10px;
+    width: 55%;
+    padding-left: 20%;
+}
+
+.pBlancaPerfil{
+    margin: 0 auto;                                                                                                  
+    text-align: left;                                                                           
+    margin-right: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: white;
+    opacity: 100%;
+}
